@@ -6,4 +6,4 @@ while n>0:  #since we don't know number of iteration use while loop
     print("digits are:",r)  #printing individual digits
     n = n//10 #stores the quotient
 
-
+# time complexity o(log base 10(n))
