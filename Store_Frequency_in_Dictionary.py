@@ -1,3 +1,14 @@
+# Normal Approach
+# take input from user
+l = list(input("enter elements into list: "))
+freq = {}
+for i in range(len(l)):
+    if l[i] in freq:
+        freq[l[i]] += 1
+    else:
+        freq[l[i]] = 1
+print(freq)
+
 #2nd approach
 l = list(input("enter elements into the list: "))
 hash_map = {}
