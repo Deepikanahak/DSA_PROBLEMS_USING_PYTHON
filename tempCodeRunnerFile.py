@@ -1,9 +1,9 @@
-def array_reverse(array,left,right):
+def palindrom(str, left,right):
     if left >= right:
-        return
-    else:
-        array[left],array[right] = array[right],array[left]
-    array_reverse(array,left+1,right-1)
-array = [1,2,3,4,5,6,7]
-array_reverse(array,0,6)
-print(array)
+        return True
+    if str[left]!=str[right]:
+        return False
+    return palindrom(str,left+1,right-1)
+str = "this is my journey towards"
+x=palindrom(str,0,10)
+print(x)
