@@ -1,12 +1,8 @@
-#Write a program to find the largest of three numbers using conditional statements
-def find_largest(n1,n2,n3):
-    if n1>n2 and n2>n3:
-        return n1
-    elif n2>n3 and n2>n1:
-        return n2
-    else:
-        return n3
-n1 = int(input("enter a number: "))
-n2 = int(input("enter a number: "))
-n3 = int(input("enter a number: "))
-find_largest(n1,n2,n3)
+def multiplication(n):
+    product = 1
+    for i in range(1,11):
+        print(n, "X", i, "=", n*i)
+num = int(input("Enter a number of which you want to print a table: "))
+table = multiplication(num)
+print("multiplication table is:\n",table)
+#Write a function that checks whether a number
