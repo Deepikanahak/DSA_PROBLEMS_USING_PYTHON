@@ -1,4 +1,4 @@
-#HEAD RECURSION
+#TAIL RECURSION
 
 count = 0
 def fun():
@@ -10,7 +10,7 @@ def fun():
     fun()
 fun()
 
-#TAIL RECURSION
+#HEAD RECURSION
 count = 0
 def fun():
     global count
